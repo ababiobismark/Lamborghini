@@ -62,14 +62,14 @@ zokou({ nomCom: "help", categorie: "Menu" }, async (dest, zk, commandeOptions) =
         if (!emoji[cat]) {
             emoji[cat] = "🇹🇿";
         }
-        menuMsg += `${emoji[cat]} 🇹🇿*${cat} * 🇹🇿 ${emoji[cat]}\n`;
+        menuMsg += `${emoji[cat]} *${cat} * ${emoji[cat]}\n`;
         for (const cmd of coms[cat]) {
-            menuMsg += "\t  🇹🇿 " + cmd + "" + " \n";
+            menuMsg += "\t   " + cmd + "" + " \n";
         }
     }
-    var link = "https://telegra.ph/file/07a6fca837d4d974afb00.jpg";
+    var link = "https://telegra.ph/file/c2ca91d0354792f5b6df5.jpg";
     try {
-        zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "©TKM INC" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: link }, caption: menuMsg, footer: "© Lamborghini" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
