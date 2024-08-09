@@ -1,5 +1,5 @@
 {
-  "name": "joel md v 3.0.0",
+  "name": "Lamborghini",
   "version": "3.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "whatsapp-bot",
     "Faouz995"
   ],
-  "author": "joel_tech",
+  "author": "Marisel",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
