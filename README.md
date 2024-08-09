@@ -1,9 +1,9 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰+;A+WHATSAPP+BOT;CREATED+BY+MARISEL+KING" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰+;A+WHATSAPP+BOT;CREATED+BY+MARISEL" alt="Typing SVG" /></a>
 
 <p align="center">  
   <a href="https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x">
-    <img alt="wasi" height="300" src="https://telegra.ph/file/46bcede2503c0bb662f44.jpg">
+    <img alt="wasi" height="400" src="https://telegra.ph/file/4cc9992e4af76e9e64ed3.jpg">
     <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
    <h1 align="center">𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰</h1>
   </a>
