@@ -58,7 +58,7 @@
 
 </p>
 
-- <a href="https://uptimerobot.com"><img title="Run it on uptime" src="https://img.shields.io/badge/RUN ON UPTIME-h?color=blue&style=for-the-badge&logo=bLamborghini" width="220" height="38.45"/></a></p>
+- <a href="https://uptimerobot.com"><img title="Run it on uptime" src="https://img.shields.io/badge/RUN ON UPTIME-h?color=blue&style=for-the-badge&logo=Lamborghini" width="220" height="38.45"/></a></p>
 
 </p>
 
