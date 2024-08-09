@@ -14,7 +14,7 @@ const s = require(__dirname + "/../set");
 
 
 
-zokou({ nomCom: "joel", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "marisel", categorie: "Menu" }, async (dest, zk, commandeOptions) => {
 
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
 
@@ -66,59 +66,46 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 
- 𝙥𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙟𝙤𝙚𝙡 𝙠𝙖𝙣𝙜'𝙤𝙢𝙖
-┃   Mode: ${mode}
-┃   User : ${s.OWNER_NAME}
-┃
- 𝙥𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙟𝙤𝙚𝙡 𝙠𝙖𝙣𝙜'𝙤𝙢𝙖
- 𝙥𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙟𝙤𝙚𝙡 𝙠𝙖𝙣𝙜'𝙤𝙢𝙖\n\n`;
+┏❏ 𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰
+┃ ⿻Mode: ${mode}
+┃ ⿻User:${s.OWNER_NAME}
+┃ ⿻Library : Baileys
+️┃ ⿻Prefix : ${s.PREFIXE}
+️┃ ⿻Date : ${date}
+┃ ⿻Time : ${temps}
+┃ ⿻Tools : ${cm.length}
+┃ ⿻Ram : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃ ⿻Host : ${os.platform()}
+┗❏\n\n`;
 
-
-    
-
+  
 let menuMsg = `
-┏━━━━━━━━━━━━━━┓
-┣❏joel md bot 
-┣❏©joel _it🕷️
-┗━━━━━━━━━━━━━━┛\n
-
-
-
-
-𒈒joel md cmds𒈒
+𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰
 `;
 
 
 
     for (const cat in coms) {
 
-        menuMsg += `┏━━━━━⚼ ${cat}`;
+        menuMsg += `┏❏ *${cat}*`;
 
         for (const cmd of coms[cat]) {
 
             menuMsg += `
-┃🕷️ ${cmd}`;
+┃◉ ${cmd}`;
 
         }
 
         menuMsg += `
-┗━━━━━━━━━━━━━━┛\n`
+┗❏\n`
 
     }
 
 
 
     menuMsg += `
-
-
-︎┏━━━━━━━━━━━━━━┓
-️┣❏joel md bot 
-┣❏© by joel tech 
-┗━━━━━━━━━━━━━━┛\n
-
-
-┏━━━━━━━━━━━━━━┓
-┃regards to joel_it
+┏┻━━━━━━━━━━━━┻┓
+┃𝑴𝒂𝒓𝒊𝒔𝒆𝒍
 ┗━━━━━━━━━━━━━━┛\n
 
 
@@ -134,7 +121,7 @@ let menuMsg = `
 
     try {
 
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *JOEL-BOT*, déveloper joel james" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝒃𝒖𝒈𝒂𝒕𝒕𝒊*, déveloper Cod3uchiha" , gifPlayback : true }, { quoted: ms });
 
     }
 
@@ -154,7 +141,7 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
 
     try {
 
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *TKM-bot*, déveloper cod3uchiha" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝒃𝒖𝒈𝒂𝒕𝒕𝒊*, déveloper cod3uchiha" }, { quoted: ms });
 
     }
 
