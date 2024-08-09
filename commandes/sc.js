@@ -1,40 +1,85 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
+const util = require('util');
+const fs = require('fs-extra');
+const { zokou } = require(__dirname + "/../framework/zokou");
+const { format } = require(__dirname + "/../framework/mesfonctions");
+const os = require("os");
+const moment = require("moment-timezone");
+const s = require(__dirname + "/../set");
+const more = String.fromCharCode(8206)
+const readmore = more.repeat(4001)
 
-zokou({ nomCom: "sc", catégorie:"Général", reaction: "✨", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
-  const githubRepo = 'https://api.github.com/repos/betingrich/Lamborghini';
-  const img = "https://telegra.ph/file/788d8d0cb0f47084ecd41.jpg'';
-
-  try {
-    const response = await fetch(githubRepo);
-    const data = await response.json();
-
-    if (data) {
-      const repoInfo = {
-        stars: data.stargazers_count,
-        forks: data.forks_count,
-        lastUpdate: data.updated_at,
-        owner: data.owner.login,
-      };
-
-      const releaseDate = new Date(data.created_at).toLocaleDateString('en-GB');
-      const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
-
-      const gitdata = `┏❏ 𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊 ❐
-┃ *REPOSITORY:* ${data.html_url}
-┃ *STARS:* ${repoInfo.stars}
-┃ *FORKS:* ${repoInfo.forks}
-┃ *RELEASE DATE:* ${releaseDate}
-┃ *UPDATE ON:* ${repoInfo.lastUpdate}
-┃ *OWNER* :𝑴𝒂𝒓𝒊𝒔𝒆𝒍
-┗❏`;
-
-      await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
-    } else {
-      console.log("Could not fetch data");
+zokou({ nomCom: "sc", categorie: "General" }, async (dest, zk, commandeOptions) => {
+    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
+    let { cm } = require(__dirname + "/../framework//zokou");
+    var coms = {};
+    var mode = "public";
+    
+    if ((s.MODE).toLocaleLowerCase() != "yes") {
+        mode = "private";
     }
-  } catch (error) {
-    console.log("Error fetching data:", error);
-  }
-});
+
+
+    
+
+    cm.map(async (com, index) => {
+        if (!coms[com.categorie])
+            coms[com.categorie] = [];
+        coms[com.categorie].push(com.nomCom);
+    });
+
+    moment.tz.setDefault('Etc/GMT');
+
+// Créer une date et une heure en GMT
+const temps = moment().format('HH:mm:ss');
+const date = moment().format('DD/MM/YYYY');
+
+  let infoMsg =  `
+  *LAMBORGHINI IMPORTANT INFO* 
+❒───────────────────❒
+*GITHUB LINK*
+> https://github.com/betingrich/Lamborghini 
+
+*WHATSAPP CHANNEL*
+> https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x
+
+*FOR MORE INFO TAP ON THE LINK BELOW*
+> https://wa.me/254740007567?text=Hi+Marisel+I+Need+Help
+╭───────────────────❒
+│❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│❒⁠⁠⁠⁠ *DEV* : *Marisel*
+⁠⁠⁠⁠╰───────────────────❒
+  `;
+    
+let menuMsg = `
+     𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰 𝑳𝑨𝑩
+
+❒────────────────────❒`;
+
+   var lien = mybotpic();
+
+   if (lien.match(/\.(mp4|gif)$/i)) {
+    try {
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
+    }
+    catch (e) {
+        console.log("🥵🥵 Menu erreur " + e);
+        repondre("🥵🥵 Menu erreur " + e);
+    }
+} 
+// Vérification pour .jpeg ou .png
+else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
+    try {
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
+    }
+    catch (e) {
+        console.log("🥵🥵 Menu erreur " + e);
+        repondre("🥵🥵 Menu erreur " + e);
+    }
+} 
+else {
+    
+    repondre(infoMsg + menuMsg);
+    
+}
+
+}); 
