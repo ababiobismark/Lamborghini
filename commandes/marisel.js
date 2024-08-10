@@ -121,7 +121,7 @@ let menuMsg = `
 
     try {
 
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝒃𝒖𝒈𝒂𝒕𝒕𝒊*, déveloper Cod3uchiha" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊*, déveloper Cod3uchiha" , gifPlayback : true }, { quoted: ms });
 
     }
 
