@@ -107,12 +107,18 @@ HOW TO REACH THE OWNER?
 
 </p>
 
+*𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐎𝐖𝐍𝐄𝐑*
 
-
-
-
-
-  
+<table>
+  <tr>
+    <td>𝐣𝐨𝐞𝐥_𝐭𝐞𝐜𝐡</td>
+    <td>𝐣𝐨𝐞 𝐰𝐚 𝐜𝐡𝐚𝐧𝐧𝐞𝐥</td>
+  </tr>
+  <tr>
+    <td><a href="https://wa.me/254740007567?"><img src="https://telegra.ph/file/1d760821620fef8c313aa.jpg" width="180"</td>
+    <td><a href="https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x"><img src="https://telegra.ph/file/768db9a29c199cf69f038.jpg" width="180"</td>
+  </tr>
+</table>
 
 </p>
 
