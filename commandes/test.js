@@ -6,7 +6,7 @@ zokou({ nomCom: "test", reaction: "😌", nomFichier: __filename }, async (dest,
     let z = '*𝑯𝒊 𝑰𝒎 𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊* \n\n ' + "𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝒃𝒆𝒍𝒐𝒗𝒆𝒅 𝒃𝒐𝒕";
     let d = ' 𝑩𝒚 *𝑴𝒂𝒓𝒊𝒔𝒆𝒍*';
     let varmess = z + d;
-    var img = 'https://telegra.ph/file/673e120507f0b7ab12023.jpg';
+    var img = 'https://telegra.ph/file/ab57d624f8447c1a414c1.jpg';
     await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
     //console.log("montest")
 });
