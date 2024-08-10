@@ -61,7 +61,7 @@ zokou({
       }
 
       const senderId = msg.key.participant.split('@')[0];
-      const caption = ` Anti-delete-message by joel tech\nMessage de @${senderId}`;
+      const caption = `𝑨𝒏𝒕𝒊-𝑫𝒆𝒍𝒆𝒕𝒆 𝑴𝒆𝒔𝒔𝒂𝒈𝒆 𝒃𝒚 𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊\nMessage de @${senderId}`;
       const imageCaption = { image: { url: './media/deleted-message.jpg' }, caption, mentions: [msg.key.participant] };
 
       await zk.sendMessage(idBot, imageCaption);
