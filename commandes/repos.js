@@ -28,7 +28,8 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "✨", nomFichier: __f
 ┃ *RELEASE DATE:* ${releaseDate}
 ┃ *UPDATE ON:* ${repoInfo.lastUpdate}
 ┃ *OWNER* :𝑴𝒂𝒓𝒊𝒔𝒆𝒍
-┗❏`;
+__________________________________
+            *𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰*`;
 
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
     } else {
