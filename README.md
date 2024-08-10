@@ -111,8 +111,8 @@ HOW TO REACH THE OWNER?
 
 <table>
   <tr>
-    <td>𝐣𝐨𝐞𝐥_𝐭𝐞𝐜𝐡</td>
-    <td>𝐣𝐨𝐞 𝐰𝐚 𝐜𝐡𝐚𝐧𝐧𝐞𝐥</td>
+    <td>𝑴𝒂𝒓𝒊𝒔𝒆𝒍</td>
+    <td>𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑪𝒉𝒂𝒏𝒏𝒆𝒍</td>
   </tr>
   <tr>
     <td><a href="https://wa.me/254740007567?"><img src="https://telegra.ph/file/1d760821620fef8c313aa.jpg" width="180"</td>
