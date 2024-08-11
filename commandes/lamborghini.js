@@ -31,15 +31,6 @@ zokou({ nomCom: "lamborghini", categorie: "Menu" }, async (dest, zk, commandeOpt
         mode = "private";
 
     }
-
-
-
-
-
-    
-
-
-
     cm.map(async (com, index) => {
 
         if (!coms[com.categorie])
@@ -50,11 +41,7 @@ zokou({ nomCom: "lamborghini", categorie: "Menu" }, async (dest, zk, commandeOpt
 
     });
 
-
-
     moment.tz.setDefault(s.TZ);
-
-
 
 // Créer une date et une heure en GMT
 
@@ -62,11 +49,9 @@ const temps = moment().format('HH:mm:ss');
 
 const date = moment().format('DD/MM/YYYY');
 
-
-
   let infoMsg =  `
 
-┏❏ 𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊 ❐
+┏✰𝐋𝐀𝐌𝐁𝐎𝐑𝐆𝐇𝐈𝐍𝐈✰┓
 ┃ ⿻Mode: ${mode}
 ┃ ⿻User : ${s.OWNER_NAME}
 ┃ ⿻Library : Baileys
@@ -75,25 +60,17 @@ const date = moment().format('DD/MM/YYYY');
 ┃ ⿻Time : ${temps}
 ┃ ⿻Tools : ${cm.length}
 ┃ ⿻Ram : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃ ⿻theme :𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊
-┗❏\n\n`;
-
-
-    
-
+┃ ⿻theme :𝐋𝐀𝐌𝐁𝐎
+┗✰\n\n┛`;
 let menuMsg = `
 
-𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔
+𝐋𝐀𝐌𝐁𝐎𝐑𝐆𝐇𝐈𝐍𝐈 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 \n
 
-
 `;
-
-
-
     for (const cat in coms) {
 
-        menuMsg += `┏❏ *${cat}*`;
+        menuMsg += `┏✰ *${cat}*`;
 
         for (const cmd of coms[cat]) {
 
@@ -103,28 +80,18 @@ let menuMsg = `
         }
 
         menuMsg += `
-┗❏\n`
+┗✰\n`
 
     }
-
-
-
     menuMsg += `
-
-
 ︎┏━━━━━━━━━━━━━━━┓
-️┣❏𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊
+️┣❏𝐋𝐀𝐌𝐁𝐎𝐑𝐆𝐇𝐈𝐍𝐈
 ┗━━━━━━━━━━━━━━━┛
+ > 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐌𝐀𝐑𝐈𝐒𝐄𝐋
 \n
-
-
 `;
 
-
-
    var lien = mybotpic();
-
-
 
    if (lien.match(/\.(mp4|gif)$/i)) {
 
@@ -146,7 +113,7 @@ let menuMsg = `
 
 // Vérification pour .jpeg ou .png
 
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
+else if(lien.match(/\.(jpeg|png|jpg)$/i)) {
 
     try {
 
