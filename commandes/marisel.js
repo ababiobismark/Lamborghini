@@ -30,17 +30,9 @@ zokou({ nomCom: "marisel", categorie: "Menu" }, async (dest, zk, commandeOptions
 
         mode = "private";
 
-    }
+    }   
 
-
-
-
-
-    
-
-
-
-    cm.map(async (com, index) => {
+   cm.map(async (com, index) => {
 
         if (!coms[com.categorie])
 
@@ -66,7 +58,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 
-┏❏ 𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰
+┏✰𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰✰┓
 ┃ ⿻Mode: ${mode}
 ┃ ⿻User:${s.OWNER_NAME}
 ┃ ⿻Library : Baileys
@@ -76,18 +68,15 @@ const date = moment().format('DD/MM/YYYY');
 ┃ ⿻Tools : ${cm.length}
 ┃ ⿻Ram : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ┃ ⿻Host : ${os.platform()}
-┗❏\n\n`;
+┗✰\n\n┛`;
 
   
 let menuMsg = `
-𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰
+𝐋𝐀𝐌𝐁𝐈𝐑𝐆𝐇𝐈𝐍𝐈 𝐌𝐄𝐍𝐔
 `;
-
-
-
     for (const cat in coms) {
 
-        menuMsg += `┏❏ *${cat}*`;
+        menuMsg += `┏✰ *${cat}*┓`;
 
         for (const cmd of coms[cat]) {
 
@@ -97,21 +86,15 @@ let menuMsg = `
         }
 
         menuMsg += `
-┗❏\n`
+┗✰\n┛`
 
     }
 
-
-
     menuMsg += `
 ┏┻━━━━━━━━━━━━┻┓
-┃𝑴𝒂𝒓𝒊𝒔𝒆𝒍
+┃𝐌𝐀𝐑𝐈𝐒𝐄𝐋
 ┗━━━━━━━━━━━━━━┛\n
-
-
 `;
-
-
 
    var lien = mybotpic();
 
