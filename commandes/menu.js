@@ -33,13 +33,6 @@ zokou({ nomCom: "menu", categorie: "Menu" }, async (dest, zk, commandeOptions) =
     }
 
 
-
-
-
-    
-
-
-
     cm.map(async (com, index) => {
 
         if (!coms[com.categorie])
@@ -66,7 +59,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
 
-┏❏ 𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊❐
+┏❏ 𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰❐
 ┃ ⿻Mode: ${mode}
 ┃ ⿻User : ${s.OWNER_NAME}
 ┃ ⿻Library : Baileys
@@ -75,21 +68,14 @@ const date = moment().format('DD/MM/YYYY');
 ┃ ⿻Time : ${temps}
 ┃ ⿻Tools : ${cm.length}
 ┃ ⿻Ram : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃ ⿻theme : 𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊
-┗❏\n\n`;
-
-
+┃ ⿻theme : 𝑳𝑨𝑴𝑩𝑶
+┗❏\n\n`
     
-
 let menuMsg = `
-
-𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊
+𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰 𝑴𝑬𝑵𝑼
 \n
 
-
 `;
-
-
 
     for (const cat in coms) {
 
@@ -98,7 +84,7 @@ let menuMsg = `
         for (const cmd of coms[cat]) {
 
             menuMsg += `
-┃ ⎔ ${cmd}`;
+┃ ✰ ${cmd}`;
 
         }
 
@@ -107,19 +93,12 @@ let menuMsg = `
 
     }
 
-
-
     menuMsg += `
-
-
 ︎┏━━━━━━━━━━━━━━━┓
-️┣❏𝑳𝒂𝒎𝒃𝒐𝒓𝒈𝒉𝒊𝒏𝒊
+️┣❏𝑳𝑨𝑴𝑩𝑶𝑹𝑮𝑯𝑰𝑵𝑰
 ┗━━━━━━━━━━━━━━━┛\n
 
-
 `;
-
-
 
    var lien = mybotpic();
 
@@ -166,10 +145,7 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
 else {
 
     
-
     repondre(infoMsg + menuMsg);
-
-    
 
 }
 
